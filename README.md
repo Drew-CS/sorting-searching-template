@@ -1,35 +1,34 @@
-# Technical HW: Implementing ADTs
+# Technical HW: Sorting & Searching
 
-In this assignment we are implementing the ADTs we've been studying 
-so far this semester: Linked Lists, Stacks, & Queues. We **will not** be
-using _any_ built-in functions other than `range` or `len` and the `Node`
-class provided.
-
-Please complete implementing all 5 classes (**_Hint:_** we went over
-3 of them in class). The constructors, fields, & method stubs are
-started for you.
+In this assignment we will be implementing the sorting & search functionality
+that we have been studying. However, you get to choose which two sorting
+algorithms to implement! We **will not** be using _any_ built-in functions other 
+than `range` or `len`. **No credit** will be given for using the built-in python sort or search 
+functions (`sort`, `sorted`, `contains`, `index`, etc.), the keyword `in` for search,  or libraries  functions -- you *must* implement your own sort & search functions for credit!
 
 You can test the code by running the `pytest` or `python3` commands:
 
-* To run just the main code for one problem: `python3 LinkedList.py`
-* To run the tests for one problem: `pytest LinkedList_test.py`
+* To run just the main code for one problem: `python3 iterative_sort.py`
+* To run the tests for one problem: `pytest iterative_sort.py`
 * To run all the tests prior to submission: `pytest`
 
-**NOTE: DO NOT run pytest until your main is working**
--- it may not stop running!
+**NOTE: Don't run pytest until your main is working**
 
 ### Files that should (& shouldn't!) be changed
 
 You **SHOULD** implement your problem solutions in the following files:
-* `LinkedList.py`
-* `StackLL.py`
-* `QueueLL.py`
-* `StackArray.py`
-* `QueueArray.py`
+* `linear_search.py`
+* `binary_search.py`
+* `iterative_sort.py`
+* `recursive_sort.py`
 
-You **SHOULD NOT** modify the following files:
-* `Node.py`
-* any constructors (i.e., `__init__` functions)
+  
+
+You **SHOULD NOT** modify any `*_test.py` files:
+* `linear_search_test.py`
+* `binary_search_test.py`
+* `iterative_sort_test.py`
+* `recursive_sort_test.py`
 
 ### Professionalism
 In addition to passing the test cases and meeting the specifications / requirements (e.g., only using permitted built-in functions), your code will be assessed in terms of its **_professionalism_**:
@@ -37,48 +36,74 @@ In addition to passing the test cases and meeting the specifications / requireme
 * DRYness: avoiding unnecessary steps or copy & pasting code (use loops & functions instead!)
 * Comments: adding comments to explain what lines in longer methods/functions are doing
 
-## Problem 1: Linked List
-Given a linked list defined by a `head Node`, please implement the following methods:
-* `add(data)`: inserts a new `Node` with `data` into the front of the list
-* `get_head()`: returns the data in the head node, and `None` otherwise
-* `search(data)`: returns `True` if `data` is in the list, or `False` otherwise
-* `delete(data)`: searches for `data` in the list, removes it if found and returns it, otherwise returns `None` and makes no change to the list
-* `is_empty()`: returns `True` if the list is empty, or `False` otherwise
-* `clear():` makes the list empty
+## Problem 1: Iterative Linear Search
+Write a function `linear_search` that takes an unordered array of numbers `a`  and a number to search for `n` as parameters and returns the index of the first occurrence of the number in the array, or -1 otherwise. Your search should be performed using a loop, rather than recursion.
 
-## Problem 2: Stack-LL
-Given a stack defined by a `top Node`, please implement the following methods:
-* `push(data)`: adds a new `Node` with `data` on the top of the stack
-* `peek()`: returns the data on the top of the stack, and `None` otherwise
-* `pop()`: returns the data on the top of the stack, otherwise returns `None` if the stack is empty
-* `is_empty()`: returns `True` if the stack is empty, or `False` otherwise
-* `clear():` makes the stack empty
+Given `a = [45, 67, -2, 33, -44, 134, -67]`:
 
-## Problem 3: Queue-LL
-Given a queue defined by a `front` and `tail Node`, please implement the following methods:
-* `enq(data)`: adds a new `Node` with `data` to the tail of the queue
-* `deq()`: returns the data on the front of the queue and removes it, otherwise returns `None` if the queue is empty
-* `get_front()`: returns the data at the front of the queue, and `None` otherwise
-* `get_tail()`: returns the data at the tail of the queue, and `None` otherwise
-* `is_empty()`: returns `True` if the queue is empty, or `False` otherwise
-* `clear():` makes the queue empty
+```
+| **Example call** | **Returns** |
+| -------------- | --------- |
+| `linear_search(a, 1)` | `-1` |
+| `linear_search(a, 0)` | `-1` |
+| `linear_search(a, -1)` | `-1` |
+| `linear_search(a, 2)` | `-1` |
+| `linear_search(a, -2)` | `2` |
+| `linear_search(a, 134)` | `5` |
+| `linear_search(a, 67)` | `1` |
+| `linear_search(a, -67)` | `6` |
 
-## Problem 4: Stack-Array
-Given a stack defined by a `top` index and an `array`, please implement the following methods:
-* `push(data)`: puts `data` on the top of the stack
-* `peek()`: returns the data on the top of the stack, and `None` otherwise
-* `pop()`: returns the data on the top of the stack, otherwise returns `None` if the stack is empty
-* `is_empty()`: returns `True` if the stack is empty, or `False` otherwise
-* `clear():` makes the stack empty
+```
 
-## Problem 5: Queue-Array
-Given a queue defined by a `front` and `tail` index and an `array`, please implement the following methods:
-* `enq(data)`: puts `data` on the tail of the queue
-* `deq()`: returns the data on the front of the queue and removes it, otherwise returns `None` if the queue is empty
-* `get_front()`: returns the data at the front of the queue, and `None` otherwise
-* `get_tail()`: returns the data at the tail of the queue, and `None` otherwise
-* `is_empty()`: returns `True` if the queue is empty, or `False` otherwise
-* `clear():` makes the queue empty
+## Problem 2: Recursive Binary Search
+Write a recursive function `binary_search` that takes an ordered array of numbers `a`  and a number to search for `n` as  parameters and returns the index of the first occurrence of the number in the array, or -1 otherwise. For full credit, the search should be implemented using recursion, rather than a loop.
+
+Given `a = [-1, 1, 3, 5, 7, 9]`:
+
+```
+| **Example call** | **Returns** |
+| -------------- | --------- |
+| `linear_search(a, 1)` | `1` |
+| `linear_search(a, 0)` | `-1` |
+| `linear_search(a, -1)` | `0` |
+| `linear_search(a, 2)` | `-1` |
+| `linear_search(a, -2)` | `-1` |
+| `linear_search(a, 4)` | `-1` |
+| `linear_search(a, 5)` | `3` |
+| `linear_search(a, 6)` | `-1` |
+| `linear_search(a, 7)` | `4` |
+| `linear_search(a, 134)` | `-1` |
+| `linear_search(a, -67)` | `-1` |
+
+```
+
+## Problem 3: Iterative Sort
+
+Write an *O(n<sup>2</sup>sup>)* sort function `iterative_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using bubble sort, insertion sort, or selection sort using loops, rather than recursion.
+
+```
+| **Example call** | **Returns** |
+| -------------- | --------- |
+| `iterative_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
+| `iterative_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
+| `iterative_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
+
+```
+
+## Problem 4: Recursive Sort
+
+Write a less than *O(n<sup>2</sup>sup>)* sort function `recursive_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using merge sort or quick sort with recursion, rather than loops.
+
+```
+| **Example call** | **Returns** |
+| -------------- | --------- |
+| `iterative_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
+| `iterative_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
+| `iterative_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
+
+```
+
+## 
 
 ## Getting started
 
