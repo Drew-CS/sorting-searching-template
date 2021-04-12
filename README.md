@@ -41,7 +41,6 @@ Write a function `linear_search` that takes an unordered array of numbers `a`  a
 
 Given `a = [45, 67, -2, 33, -44, 134, -67]`:
 
-```
 | **Example call** | **Returns** |
 | -------------- | --------- |
 | `linear_search(a, 1)` | `-1` |
@@ -53,14 +52,12 @@ Given `a = [45, 67, -2, 33, -44, 134, -67]`:
 | `linear_search(a, 67)` | `1` |
 | `linear_search(a, -67)` | `6` |
 
-```
 
 ## Problem 2: Recursive Binary Search
 Write a recursive function `binary_search` that takes an ordered array of numbers `a`  and a number to search for `n` as  parameters and returns the index of the first occurrence of the number in the array, or -1 otherwise. For full credit, the search should be implemented using recursion, rather than a loop.
 
 Given `a = [-1, 1, 3, 5, 7, 9]`:
 
-```
 | **Example call** | **Returns** |
 | -------------- | --------- |
 | `linear_search(a, 1)` | `1` |
@@ -75,33 +72,27 @@ Given `a = [-1, 1, 3, 5, 7, 9]`:
 | `linear_search(a, 134)` | `-1` |
 | `linear_search(a, -67)` | `-1` |
 
-```
 
 ## Problem 3: Iterative Sort
 
 Write an *O(n<sup>2</sup>sup>)* sort function `iterative_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using bubble sort, insertion sort, or selection sort using loops, rather than recursion.
 
-```
 | **Example call** | **Returns** |
 | -------------- | --------- |
 | `iterative_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
 | `iterative_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
 | `iterative_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
 
-```
 
 ## Problem 4: Recursive Sort
 
 Write a less than *O(n<sup>2</sup>sup>)* sort function `recursive_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using merge sort or quick sort with recursion, rather than loops.
 
-```
 | **Example call** | **Returns** |
 | -------------- | --------- |
 | `iterative_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
 | `iterative_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
 | `iterative_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
-
-```
 
 ## 
 
