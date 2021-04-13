@@ -11,7 +11,10 @@
 # full credit, the search should be implemented using
 # recursion, rather than a loop.
 def binary_search(array, num):
-    return -1
+    return search(array, num, 0, len(array) - 1)
+
+def search(array, num, min, max):
+        return -1
 
 def main():
     a = [i for i in range(-1, 10, 2)]

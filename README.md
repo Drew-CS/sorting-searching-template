@@ -75,7 +75,7 @@ Given `a = [-1, 1, 3, 5, 7, 9]`:
 
 ## Problem 3: Iterative Sort
 
-Write an *O(n<sup>2</sup>sup>)* sort function `iterative_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using bubble sort, insertion sort, or selection sort using loops, rather than recursion.
+Write an *O(n<sup>2</sup>)* sort function `iterative_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using bubble sort, insertion sort, or selection sort using loops, rather than recursion.
 
 | **Example call** | **Returns** |
 | -------------- | --------- |
@@ -86,7 +86,7 @@ Write an *O(n<sup>2</sup>sup>)* sort function `iterative_sort` that takes an uno
 
 ## Problem 4: Recursive Sort
 
-Write a less than *O(n<sup>2</sup>sup>)* sort function `recursive_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using merge sort or quick sort with recursion, rather than loops.
+Write a less than *O(n<sup>2</sup>)* sort function `recursive_sort` that takes an unordered array of numbers as a parameter and returns a sorted array using merge sort or quick sort with recursion, rather than loops.
 
 | **Example call** | **Returns** |
 | -------------- | --------- |
