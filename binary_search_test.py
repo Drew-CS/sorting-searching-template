@@ -4,36 +4,36 @@ def test_empty():
     assert binary_search([], 0) == -1
 
 def test_1():
-    a = [45, 67, -2, 33, -44, 134, -67]
+    a = [-67, -44, -2, 33, 45, 67, 134]
     assert binary_search(a, 1) == -1
 
 def test_0():
-    a = [45, 67, -2, 33, -44, 134, -67]
+    a = [-67, -44, -2, 33, 45, 67, 134]
     assert binary_search(a, 0) == -1
 
 def test__1():
-    a = [45, 67, -2, 33, -44, 134, -67]
+    a = [-67, -44, -2, 33, 45, 67, 134]
     assert binary_search(a, -1) == -1
 
 def test_2():
-    a = [45, 67, -2, 33, -44, 134, -67]
+    a = [-67, -44, -2, 33, 45, 67, 134]
     assert binary_search(a, 2) == -1
 
 def test__2():
-    a = [45, 67, -2, 33, -44, 134, -67]
+    a = [-67, -44, -2, 33, 45, 67, 134]
     assert binary_search(a, -2) == 2
 
 def test_134():
-    a = [45, 67, -2, 33, -44, 134, -67]
-    assert binary_search(a, 134) == 5
+    a = [-67, -44, -2, 33, 45, 67, 134]
+    assert binary_search(a, 134) == 6
 
 def test_67():
-    a = [45, 67, -2, 33, -44, 134, -67]
-    assert binary_search(a, 67) == 1
+    a = [-67, -44, -2, 33, 45, 67, 134]
+    assert binary_search(a, 67) == 5
 
 def test__67():
-    a = [45, 67, -2, 33, -44, 134, -67]
-    assert binary_search(a, -67) == 6
+    a = [-67, -44, -2, 33, 45, 67, 134]
+    assert binary_search(a, -67) == 0
 
 def test_first():
     a = [1, 1, 1, 2, 2, 2, 2, 2, 2]
