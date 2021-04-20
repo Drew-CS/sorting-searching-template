@@ -60,17 +60,17 @@ Given `a = [-1, 1, 3, 5, 7, 9]`:
 
 | **Example call** | **Returns** |
 | -------------- | --------- |
-| `recursive_search(a, 1)` | `1` |
-| `recursive_search(a, 0)` | `-1` |
-| `recursive_search(a, -1)` | `0` |
-| `recursive_search(a, 2)` | `-1` |
-| `recursive_search(a, -2)` | `-1` |
-| `recursive_search(a, 4)` | `-1` |
-| `recursive_search(a, 5)` | `3` |
-| `recursive_search(a, 6)` | `-1` |
-| `recursive_search(a, 7)` | `4` |
-| `recursive_search(a, 134)` | `-1` |
-| `recursive_search(a, -67)` | `-1` |
+| `binary_search(a, 1)` | `1` |
+| `binary_search(a, 0)` | `-1` |
+| `binary_search(a, -1)` | `0` |
+| `binary_search(a, 2)` | `-1` |
+| `binary_search(a, -2)` | `-1` |
+| `binary_search(a, 4)` | `-1` |
+| `binary_search(a, 5)` | `3` |
+| `binary_search(a, 6)` | `-1` |
+| `binary_search(a, 7)` | `4` |
+| `binary_search(a, 134)` | `-1` |
+| `binary_search(a, -67)` | `-1` |
 
 
 ## Problem 3: Iterative Sort
