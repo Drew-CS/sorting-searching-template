@@ -60,17 +60,17 @@ Given `a = [-1, 1, 3, 5, 7, 9]`:
 
 | **Example call** | **Returns** |
 | -------------- | --------- |
-| `linear_search(a, 1)` | `1` |
-| `linear_search(a, 0)` | `-1` |
-| `linear_search(a, -1)` | `0` |
-| `linear_search(a, 2)` | `-1` |
-| `linear_search(a, -2)` | `-1` |
-| `linear_search(a, 4)` | `-1` |
-| `linear_search(a, 5)` | `3` |
-| `linear_search(a, 6)` | `-1` |
-| `linear_search(a, 7)` | `4` |
-| `linear_search(a, 134)` | `-1` |
-| `linear_search(a, -67)` | `-1` |
+| `recursive_search(a, 1)` | `1` |
+| `recursive_search(a, 0)` | `-1` |
+| `recursive_search(a, -1)` | `0` |
+| `recursive_search(a, 2)` | `-1` |
+| `recursive_search(a, -2)` | `-1` |
+| `recursive_search(a, 4)` | `-1` |
+| `recursive_search(a, 5)` | `3` |
+| `recursive_search(a, 6)` | `-1` |
+| `recursive_search(a, 7)` | `4` |
+| `recursive_search(a, 134)` | `-1` |
+| `recursive_search(a, -67)` | `-1` |
 
 
 ## Problem 3: Iterative Sort
@@ -90,9 +90,9 @@ Write a less than *O(n<sup>2</sup>)* sort function `recursive_sort` that takes a
 
 | **Example call** | **Returns** |
 | -------------- | --------- |
-| `iterative_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
-| `iterative_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
-| `iterative_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
+| `recursive_sort([45, 67, -2, 33, 0, -44, 134, -67])` | `[-67, -44, -2, 0, 33, 45, 67, 134]` |
+| `recursive_sort([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` |
+| `recursive_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])` | `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` |
 
 ## 
 
