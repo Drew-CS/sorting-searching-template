@@ -4,10 +4,10 @@
 # NAME:         FIXME
 # ASSIGNMENT:   Technical HW: Sorting & Searching
 
-# Write a recursive function `binary_search` that
+# Write a recursive function `search` that
 # takes an ordered array of numbers as a parameter
 # and a number to search for and returns the index
-# of the number in the array, or -1 otherwise. For
+# of the number in the array using binary, or -1 otherwise. For
 # full credit, the search should be implemented using
 # recursion, rather than a loop.
 def binary_search(array, num):
