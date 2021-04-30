@@ -3,7 +3,7 @@
 In this assignment we will be implementing the sorting & search functionality
 that we have been studying. However, you get to choose which two sorting
 algorithms to implement! We **will not** be using _any_ built-in functions other 
-than `range`, `append`, or `len`. **No credit** will be given for using the built-in python sort or search 
+than `range`, `append`, `extend`, or `len`. **No credit** will be given for using the built-in python sort or search 
 functions (`sort`, `sorted`, `contains`, `index`, etc.), the keyword `in` for search,  or libraries  functions -- you *must* implement your own sort & search functions for credit!
 
 You can test the code by running the `pytest` or `python3` commands:
