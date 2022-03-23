@@ -1,4 +1,4 @@
-# Technical HW: Sorting & Searching
+# Project 4: Sorting & Searching
 
 In this assignment we will be implementing the sorting & search functionality
 that we have been studying. However, you get to choose which two sorting
