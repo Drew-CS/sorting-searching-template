@@ -2,7 +2,7 @@
 # TO PROBLEM 3: Iterative Sort - O(n^2)
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Sorting & Searching
+# ASSIGNMENT:   Project 4: Sorting & Searching
 
 # Write an O(n^2) sort function `iterative_sort` that
 # takes an unordered array of numbers as a parameter
