@@ -2,7 +2,7 @@
 # TO PROBLEM 1: Iterative Linear Search
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Sorting & Searching
+# ASSIGNMENT:   Project 4: Sorting & Searching
 
 # Write a function `linear_search` that takes an
 # unordered array of numbers as a parameter and
