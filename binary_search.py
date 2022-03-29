@@ -2,7 +2,7 @@
 # TO PROBLEM 2: Recursive Binary Search
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Sorting & Searching
+# ASSIGNMENT:   Project 4: Sorting & Searching
 
 # Write a recursive function `search` that
 # takes an ordered array of numbers as a parameter
