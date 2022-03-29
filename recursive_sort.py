@@ -2,7 +2,7 @@
 # TO PROBLEM 4: Recursive Sort < O(n^2)
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Sorting & Searching
+# ASSIGNMENT:   Project 4: Sorting & Searching
 
 # Write a less than O(n^2) sort function `recursive_sort`
 # that takes an unordered array of numbers as a parameter
