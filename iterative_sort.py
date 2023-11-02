@@ -9,12 +9,13 @@
 # and returns a sorted array using bubble sort, insertion
 # sort, or selection sort using loops, rather than recursion.
 def iterative_sort(array):
+    # FIXME
     return array
 
 def main():
     arrays = [ [45, 67, -2, 33, 0, -44, 134, -67], \
                [i for i in range(10)], \
-               [i for i in range(10,-1, -1)] ]
+               [i for i in range(10, -1, -1)] ]
 
     for a in arrays:
         print("Unordered:", a)
