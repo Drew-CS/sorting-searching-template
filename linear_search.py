@@ -11,6 +11,7 @@
 # search should be performed using a loop, rather
 # than recursion.
 def linear_search(array, num):
+    # FIXME
     return -1
 
 def main():

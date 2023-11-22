@@ -14,7 +14,8 @@ def binary_search(array, num):
     return search(array, num, 0, len(array) - 1)
 
 def search(array, num, min, max):
-        return -1
+    # FIXME
+    return -1
 
 def main():
     a = [i for i in range(-1, 10, 2)]
